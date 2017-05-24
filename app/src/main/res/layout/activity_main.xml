@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uncsupport.myheatmap.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pick a Time:"
+        android:id="@+id/textView"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Day"
+            android:id="@+id/radioButton"
+            android:tag="@string/One"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Week"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:tag="@string/Two"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Weeks"
+            android:id="@+id/radioButton3"
+            android:tag="@string/Three"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Month"
+            android:id="@+id/radioButton4"
+            android:tag="@string/Four"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:foregroundGravity="center"
+        android:baselineAligned="false"
+        style="@style/AppTheme"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Current Location"
+            android:id="@+id/button"
+            android:onClick="onClicked"
+            android:tag="@string/currentlocation"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Heat Map"
+            android:id="@+id/button2"
+            android:onClick="onClicked"
+            android:tag="@string/heatmap"/>
+    </LinearLayout>
+</LinearLayout>

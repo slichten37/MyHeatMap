@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">myHeatMap</string>
+    <string name="heatmap">heat map</string>
+    <string name="currentlocation">current location</string>
+    <string name="One">1</string>
+    <string name="Two">2</string>
+    <string name="Three">3</string>
+    <string name="Four">4</string>
+</resources>
